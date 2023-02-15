@@ -47,19 +47,19 @@ export default function Navbar() {
             </div>
             <div>
               <ul className="uppercase flex flex-col items-center gap-4">
-                <Link href="/" class="hover:opacity-70">
+                <Link href="/" className="hover:opacity-70">
                   <li>Home</li>
                 </Link>
-                <Link href="/" class="hover:opacity-70">
+                <Link href="/" className="hover:opacity-70">
                   <li>About</li>
                 </Link>
-                <Link href="/" class="hover:opacity-70">
+                <Link href="/" className="hover:opacity-70">
                   <li>Skills</li>
                 </Link>
-                <Link href="/" class="hover:opacity-70">
+                <Link href="/" className="hover:opacity-70">
                   <li>Project</li>
                 </Link>
-                <Link href="/" class="hover:opacity-70">
+                <Link href="/" className="hover:opacity-70">
                   <li>Contact</li>
                 </Link>
               </ul>
