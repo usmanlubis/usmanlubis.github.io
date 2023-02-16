@@ -14,9 +14,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-1">
+    <nav className="fixed top-0 w-full h-20 shadow-xl z-50 bg-[#ecf0f3] mb-1">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/../public/assets/NavbarLogo.png" alt="Navbar Logo" width={50} height={50} />
+        <Image src="/../public/assets/NavbarLogo4.png" alt="Navbar Logo" width={70} height={70} />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -41,10 +41,10 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className={navbarSide && 'md:hidden fixed left-0 top-0 h-screen w-full bg-black/60 duration-500'}>
+      <div className={navbarSide && 'md:hidden md:ease-in md:duration-300 fixed left-0 top-0 h-screen w-full bg-black/60 duration-300'}>
         <div className={navbarSide
-          ? 'fixed top-0 left-0 h-screen w-[75%] sm:w-[60%] bg-[#f5f5f5] p-6 ease-in duration-500'
-          : 'fixed top-0 -left-[100%] p-6 ease-in duration-500'}
+          ? 'fixed top-0 left-0 h-screen w-[75%] sm:w-[60%] bg-[#f5f5f5] p-6 ease-in duration-300'
+          : 'fixed top-0 -left-[100%] ease-in duration-300'}
         >
           <div>
             <div className="flex justify-between items-center">
@@ -98,6 +98,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
