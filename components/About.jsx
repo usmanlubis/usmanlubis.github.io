@@ -5,8 +5,8 @@ function About() {
   return (
     <section className="w-full md:h-screen md:flex md:justify-center md:items-center">
       <div className="max-w-[1240px] px-8 mx-auto md:px-16">
-        <h2 className="text-center">Who I am</h2>
-        <div className="grid md:grid-cols-2 justify-center gap-4 mt-6 items-center">
+        <h2 className="text-center mb-16 md:mt-20">Who I am</h2>
+        <div className="grid md:grid-cols-2 justify-center gap-4 items-center">
           <div className="md:w-[100] md:text-sm lg:text-base">
             <p>
               I am a front end web developer. I am self-taught developer
