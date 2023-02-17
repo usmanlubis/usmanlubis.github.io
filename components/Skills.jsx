@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 function Skills() {
   return (
-    <section className="w-full md:h-screen md:flex md:items-center">
-      <div className="max-w-[1240px] m-auto px-8 md:px-20 md:basis-[100%]">
+    <section id="skills" className="w-full md:h-screen md:flex md:items-center">
+      <div className="max-w-[1240px] m-auto pt-[5.5rem] px-8 md:px-16 md:basis-[100%]">
         <div className="flex flex-col justify-center items-center">
-          <h2 className="mb-16 md:mt-16">What I can do</h2>
+          <h2 className="mb-8">What I can do</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full gap-4 skills">
             <div className="flex justify-between items-center p-4 shadow-lg shadow-gray-500 rounded-lg hover:scale-105 ease-in duration-100">
               <Image src="/../public/assets/skills/html.png" alt="Html logo" width={50} height={50} />
