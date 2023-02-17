@@ -3,9 +3,9 @@ import ProjectsItem from './ProjectsItem';
 
 function Projects() {
   return (
-    <section className="w-full md:h-screen">
-      <div className="max-w-[1240px] mt-8 m-auto px-8 md:px-20">
-        <h2 className="text-center">What I&apos;ve built</h2>
+    <section id="projects" className="w-full">
+      <div className="max-w-[1240px] pt-[5.5rem] m-auto px-8 md:px-16">
+        <h2 className="text-center mb-8">What I&apos;ve built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectsItem
             thumbnail="/../public/assets/projects/crypto.jpg"

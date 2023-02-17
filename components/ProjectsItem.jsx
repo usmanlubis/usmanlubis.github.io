@@ -7,7 +7,7 @@ function ProjectsItem({
 }) {
   return (
     <div className="flex items-center justify-center h-auto w-full shadow-xl shadow-gray-500 rounded-xl p-4 group hover:bg-[#39BCF9]/80">
-      <Image src={thumbnail} alt="Project preview iage" width={1000} height={1000} className="rounded-xl group-hover:opacity-10" />
+      <Image src={thumbnail} alt="Project preview iage" width={300} height={300} className="rounded-xl group-hover:opacity-10 w-full" />
       <div className="hidden group-hover:block absolute">
         <h3 className="text-2xl text-white text-center tracking-wider">{title}</h3>
         <p className="text-white text-center mt-4 mb-8">{tech}</p>
