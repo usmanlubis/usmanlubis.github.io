@@ -22,16 +22,16 @@ export default function Navbar() {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="#about">
               <li className="ml-10 text-sm uppercase hover:opacity-70">About</li>
             </Link>
-            <Link href="/">
+            <Link href="#skills">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="#projects">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Projects</li>
             </Link>
-            <Link href="/">
+            <Link href="#contact">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Contact</li>
             </Link>
           </ul>
@@ -64,16 +64,16 @@ export default function Navbar() {
               <Link href="/" className="hover:opacity-70">
                 <li>Home</li>
               </Link>
-              <Link href="/" className="hover:opacity-70">
+              <Link href="#about" className="hover:opacity-70">
                 <li>About</li>
               </Link>
-              <Link href="/" className="hover:opacity-70">
+              <Link href="#skills" className="hover:opacity-70">
                 <li>Skills</li>
               </Link>
-              <Link href="/" className="hover:opacity-70">
+              <Link href="#projects" className="hover:opacity-70">
                 <li>Project</li>
               </Link>
-              <Link href="/" className="hover:opacity-70">
+              <Link href="#contact" className="hover:opacity-70">
                 <li>Contact</li>
               </Link>
             </ul>
