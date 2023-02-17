@@ -5,8 +5,8 @@ import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 function Main() {
   return (
-    <main className="w-full h-screen pt-20">
-      <div className="w-full max-w-[1240px] h-full text-center mx-auto px-8 flex justify-center items-center">
+    <main className="w-full h-screen">
+      <div className="w-full max-w-[1240px] h-full pt-[5.5rem] text-center mx-auto px-8 flex justify-center items-center">
         <div>
           <p className="uppercase tracking-widest my-2">Let&apos;s build something cool together</p>
           <h1>
