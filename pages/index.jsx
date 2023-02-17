@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-// import Body from 'next/body';
 import Navbar from '../components/Navbar';
 import Main from '../components/Main';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 export default function Home() {
   return (
@@ -21,6 +21,10 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
+      <footer className="text-center pt-8 pb-4 bottom-0">
+        <p>&copy; Usman Lubis 2023</p>
+      </footer>
     </>
   );
 }
