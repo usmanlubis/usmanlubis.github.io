@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import HtmlLogo from '../public/assets/skills/html.png';
 
 function Skills() {
   return (
@@ -9,7 +10,7 @@ function Skills() {
           <h2 className="mb-8">What I can do</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 w-full gap-4 skills">
             <div className="flex justify-between items-center p-4 shadow-lg shadow-gray-500 rounded-lg hover:scale-105 ease-in duration-100">
-              <Image src="/../public/assets/skills/html.png" alt="Html logo" width={50} height={50} />
+              <Image src={HtmlLogo} alt="Html logo" width={50} height={50} />
               <p>HTML</p>
             </div>
             <div className="flex justify-between items-center p-4 shadow-lg shadow-gray-500 rounded-lg hover:scale-105 ease-in duration-100">
