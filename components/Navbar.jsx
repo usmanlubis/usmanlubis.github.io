@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import {
   AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillMail,
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full h-20 shadow-xl z-50 bg-[#ecf0f3] mb-1">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/../public/assets/NavbarLogo4.png" alt="Navbar Logo" width={70} height={70} />
+        <img src="/../public/assets/NavbarLogo4.png" alt="Navbar Logo" width={70} height={70} />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -49,7 +49,7 @@ export default function Navbar() {
           <div>
             <div className="flex justify-between items-center">
               <div>
-                <Image src="/../public/assets/NavbarLogo.png" alt="Logo Image" height={50} width={50} />
+                <img src="/../public/assets/NavbarLogo.png" alt="Logo Image" height={50} width={50} />
               </div>
               <button type="button" className="shadow-lg shadow-gray-500 rounded-full p-2 hover:opacity-70" onClick={navbarSideHandler}>
                 <AiOutlineClose size={20} />
