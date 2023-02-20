@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectsItem from './ProjectsItem';
+import CryptoProjectThumbnail from '../public/assets/projects/crypto.jpg';
 
 function Projects() {
   return (
@@ -8,7 +9,7 @@ function Projects() {
         <h2 className="text-center mb-8">What I&apos;ve built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectsItem
-            thumbnail="/../public/assets/projects/crypto.jpg"
+            thumbnail={CryptoProjectThumbnail}
             title="Crypto"
             tech="Reacts JS"
             link="/"
