@@ -11,7 +11,7 @@ function Contact() {
       <div className="max-w-[1240px] pt-[5.5rem] m-auto px-8 md:px-16">
         <h2 className="text-center mb-8">Contact me</h2>
         <div className="grid lg:grid-cols-5 gap-8">
-          {/* left */}
+          // left side
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
@@ -73,7 +73,7 @@ function Contact() {
             </div>
           </div>
 
-          {/* right */}
+          // right side
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form
