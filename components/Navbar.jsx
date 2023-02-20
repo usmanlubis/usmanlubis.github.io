@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {
   AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillMail,
 } from 'react-icons/ai';
-import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa';
 
 export default function Navbar() {
   const [navbarSide, setNavbarSide] = useState(false);
@@ -83,17 +83,37 @@ export default function Navbar() {
             <p>Let&apos;s Connect</p>
           </div>
           <div href="/" className="flex justify-between items-center w-[80%] mx-auto mt-4">
-            <Link href="/" className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2">
+            <Link
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2"
+            >
               <FaLinkedinIn size={20} />
             </Link>
-            <Link href="/" className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2">
+            <Link
+              href="https://www.github.com/usmanlubis"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2"
+            >
               <AiFillGithub size={20} />
             </Link>
-            <Link href="/" className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2">
+            <Link
+              href="mailto:usmanlubis11@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2"
+            >
               <AiFillMail size={20} />
             </Link>
-            <Link href="/" className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2">
-              <FaTwitter size={20} />
+            <Link
+              href="https://t.me/uslubis"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-125 ease-in duration-100 rounded-full shadow-xl shadow-gray-500 p-2"
+            >
+              <FaTelegramPlane size={20} />
             </Link>
           </div>
         </div>
