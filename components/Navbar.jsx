@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
+import LogoNavbarDesktop from '../public/assets/NavbarLogo.png';
 import Link from 'next/link';
 import {
   AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillMail,
@@ -16,7 +17,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full h-20 shadow-xl z-50 bg-[#ecf0f3] mb-1">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <img src="../public/assets/NavbarLogo4.png" alt="Navbar Logo" width={70} height={70} />
+        <Image src={LogoNavbarDesktop} alt="Navbar Logo" width={70} height={70} />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
