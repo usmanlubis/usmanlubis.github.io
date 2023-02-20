@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { AiFillMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa';
 import ContactImg from '../public/assets/contact.jpg';
 
 function Contact() {
@@ -33,31 +32,40 @@ function Contact() {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <a
-                    href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                  <Link
+                    href="/"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
-                  </a>
-                  <a
-                    href="https://github.com/fireclint"
+                  </Link>
+                  <Link
+                    href="https://www.github.com/usmanlubis"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
-                  </a>
-
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <Link href="/resume">
+                  </Link>
+                  <Link
+                    href="mailto:usmanlubis11@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                      <AiFillMail />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://t.me/uslubis"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaTelegramPlane />
                     </div>
                   </Link>
                 </div>
