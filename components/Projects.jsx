@@ -1,6 +1,8 @@
 import React from 'react';
 import ProjectsItem from './ProjectsItem';
 import CryptoProjectThumbnail from '../public/assets/projects/crypto.jpg';
+import TwitchProjectThumbnail from '../public/assets/projects/twitch.jpg';
+
 
 function Projects() {
   return (
@@ -15,12 +17,12 @@ function Projects() {
             link="/"
           />
           <ProjectsItem
-            thumbnail="/../public/assets/projects/twitch.jpg"
+            thumbnail={TwitchProjectThumbnail}
             title="Twitch"
             tech="Reacts JS, Node JS"
             link="/"
           />
-          <ProjectsItem
+          {/* <ProjectsItem
             thumbnail="/../public/assets/projects/property.jpg"
             title="Property"
             tech="Reacts JS, Tailwind"
@@ -31,7 +33,7 @@ function Projects() {
             title="Netflix"
             tech="Reacts JS, Express JS"
             link="/"
-          />
+          /> */}
         </div>
       </div>
     </section>
