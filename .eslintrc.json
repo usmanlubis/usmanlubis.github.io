@@ -28,7 +28,12 @@
         "required": {
         "some": ["nesting", "id"]
         }
-    }]
+    }],
+    "react/jsx-props-no-spreading": [{
+    "html": "ignore",
+    "custom": "ignore",
+    "exceptions": []
+}]
     }
 }
 // {
