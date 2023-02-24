@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import LogoNavbar from '../public/assets/NavbarLogo4.png';
+import LogoNavbar from '../public/assets/NavbarLogo.png';
 import Link from 'next/link';
 import {
   AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillMail,
