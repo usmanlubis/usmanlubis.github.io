@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectsItem from './ProjectsItem';
-import CryptoProjectThumbnail from '../public/assets/projects/crypto.jpg';
+import CryptoProjectThumbnail from '../public/assets/projects/airbnb-clone.png';
 import TwitchProjectThumbnail from '../public/assets/projects/twitch.jpg';
 
 
