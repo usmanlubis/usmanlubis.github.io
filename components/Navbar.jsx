@@ -1,21 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import LogoNavbar from '../public/assets/NavbarLogo4.png';
 import Link from 'next/link';
 import {
   AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillMail,
 } from 'react-icons/ai';
-import { FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa';
+import { FaLinkedinIn, FaTelegramPlane, FaWindowMinimize } from 'react-icons/fa';
 
 export default function Navbar() {
   const [navbarSide, setNavbarSide] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const navbarSideHandler = () => {
     setNavbarSide(!navbarSide);
   };
 
+  useEffect(() => {
+    const handleHeaderShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleHeaderShadow);
+  }, []);
+
   return (
-    <nav className="fixed top-0 w-full h-20 shadow-xl z-50 bg-[#ecf0f3] mb-1">
+    <nav className={shadow
+      ? 'fixed top-0 w-full h-20 shadow-xl z-50 bg-[#ecf0f3] mb-1'
+      : 'fixed top-0 w-full h-20 z-50 bg-[#ecf0f3] mb-1'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image src={LogoNavbar} alt="Navbar Logo" width={70} height={70} />
         <div>
@@ -42,7 +56,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className={navbarSide && 'md:hidden md:ease-in md:duration-300 fixed left-0 top-0 h-screen w-full bg-black/60 duration-300'}>
+      <div className={navbarSide ? 'md:hidden md:ease-in md:duration-300 fixed left-0 top-0 h-screen w-full bg-black/60 duration-300' : undefined}>
         <div className={navbarSide
           ? 'fixed top-0 left-0 h-screen w-[75%] sm:w-[60%] bg-[#f5f5f5] p-6 ease-in duration-300'
           : 'fixed top-0 -left-[100%] ease-in duration-300'}
