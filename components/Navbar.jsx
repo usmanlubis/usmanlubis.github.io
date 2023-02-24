@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {
   AiOutlineMenu, AiOutlineClose, AiFillGithub, AiFillMail,
 } from 'react-icons/ai';
-import { FaLinkedinIn, FaTelegramPlane, FaWindowMinimize } from 'react-icons/fa';
+import { FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa';
 
 export default function Navbar() {
   const [navbarSide, setNavbarSide] = useState(false);
@@ -28,8 +28,8 @@ export default function Navbar() {
 
   return (
     <nav className={shadow
-      ? 'fixed top-0 w-full h-20 shadow-xl z-50 bg-[#ecf0f3] mb-1'
-      : 'fixed top-0 w-full h-20 z-50 bg-[#ecf0f3] mb-1'}>
+      ? 'fixed top-0 w-full h-20 px-4 shadow-xl z-50 bg-[#ecf0f3] mb-1'
+      : 'fixed top-0 w-full h-20 px-4 z-50 bg-[#ecf0f3] mb-1'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image src={LogoNavbar} alt="Navbar Logo" width={70} height={70} />
         <div>
