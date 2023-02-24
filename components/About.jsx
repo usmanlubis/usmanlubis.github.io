@@ -7,7 +7,7 @@ function About() {
       <div className="max-w-[1240px] pt-[5.5rem] mx-auto md:px-16">
         <h2 className="text-center mb-16">Who I am</h2>
         <div className="grid md:grid-cols-2 justify-center gap-4 items-center">
-          <div className="md:w-[100] md:text-sm lg:text-base">
+          <div className="md:w-[100] md:text-sm lg:text-base px-4">
             <p>
               I am a front end web developer. I am self-taught developer
               who learn through tutorials, reading documentation
