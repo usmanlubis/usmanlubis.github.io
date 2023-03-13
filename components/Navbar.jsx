@@ -31,7 +31,9 @@ export default function Navbar() {
       ? 'fixed top-0 w-full h-20 px-4 shadow-xl z-50 bg-[#ecf0f3] mb-1'
       : 'fixed top-0 w-full h-20 px-4 z-50 bg-[#ecf0f3] mb-1'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src={LogoNavbar} alt="Navbar Logo" width={70} height={70} />
+        <Link href='/'>
+          <Image src={LogoNavbar} alt="Navbar Logo" width={70} height={70} />
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -63,9 +65,9 @@ export default function Navbar() {
         >
           <div>
             <div className="flex justify-between items-center">
-              <div>
+              <Link href='/'>
                 <Image src={LogoNavbar} alt="Logo Image" height={50} width={50} />
-              </div>
+              </Link>
               <button type="button" className="shadow-lg shadow-gray-500 rounded-full p-2 hover:opacity-70" onClick={navbarSideHandler}>
                 <AiOutlineClose size={20} />
               </button>
