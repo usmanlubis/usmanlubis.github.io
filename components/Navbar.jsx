@@ -31,7 +31,7 @@ export default function Navbar() {
       ? 'fixed top-0 w-full h-20 px-4 shadow-xl z-50 bg-[#ecf0f3] mb-1'
       : 'fixed top-0 w-full h-20 px-4 z-50 bg-[#ecf0f3] mb-1'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href='/'>
+        <Link href="/">
           <Image src={LogoNavbar} alt="Navbar Logo" width={70} height={70} />
         </Link>
         <div>
@@ -65,7 +65,7 @@ export default function Navbar() {
         >
           <div>
             <div className="flex justify-between items-center">
-              <Link href='/'>
+              <Link href="/" onClick={() => setNavbarSide(false)}>
                 <Image src={LogoNavbar} alt="Logo Image" height={50} width={50} />
               </Link>
               <button type="button" className="shadow-lg shadow-gray-500 rounded-full p-2 hover:opacity-70" onClick={navbarSideHandler}>
@@ -78,19 +78,19 @@ export default function Navbar() {
           </div>
           <div>
             <ul className="uppercase flex flex-col items-center gap-4">
-              <Link href="/" className="hover:opacity-70">
+              <Link href="/" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Home</li>
               </Link>
-              <Link href="#about" className="hover:opacity-70">
+              <Link href="#about" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>About</li>
               </Link>
-              <Link href="#skills" className="hover:opacity-70">
+              <Link href="#skills" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Skills</li>
               </Link>
-              <Link href="#projects" className="hover:opacity-70">
+              <Link href="#projects" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Project</li>
               </Link>
-              <Link href="#contact" className="hover:opacity-70">
+              <Link href="#contact" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Contact</li>
               </Link>
             </ul>
