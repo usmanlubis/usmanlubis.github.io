@@ -8,6 +8,12 @@ import Navbar from '../components/Navbar';
 function AirbnbClone() {
   return (
     <>
+      <Head>
+        <title>AirBnb Clone - Usman Lubis</title>
+        <meta name="description" content="Air Bnb Clone project by Usman Lubis" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/assets/Favicon.png" />
+      </Head>
       <Navbar />
       <div className="w-full mt-[50px]">
         <div className="w-screen h-[50vh] relative">
