@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Avatar from '../public/assets/avatar.png';
 
 function About() {
   return (
@@ -32,11 +33,11 @@ function About() {
             </p>
           </div>
           <Image
-            src="/../public/assets/NavbarLogo.png"
+            src={Avatar}
             alt="My Photo"
             width={300}
             height={300}
-            className="md:justify-self-end -order-1 md:order-1 justify-self-center"
+            className="md:scale-[1.2] md:justify-self-end -order-1 md:order-1 justify-self-center border-4 border-slate-300 rounded-full shadow-xl"
           />
         </div>
       </div>
