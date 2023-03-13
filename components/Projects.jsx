@@ -13,7 +13,7 @@ function Projects() {
             thumbnail={AirBnbCloneThumbnail}
             title="Crypto"
             tech="Reacts JS"
-            link="/airbnb-clone"
+            link="/airbnb-clone-project"
           />
           <ProjectsItem
             thumbnail={AirBnbCloneThumbnail}
