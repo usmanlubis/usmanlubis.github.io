@@ -1,12 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import AirBnbClone from '../public/assets/projects/airbnb-clone.png';
+import SimpleNotesAppImage from '../public/assets/projects/simple-notes.png'
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 
-function AirbnbClone() {
+function SimpleNotesApp() {
   return (
     <>
       <Head>
@@ -23,12 +23,12 @@ function AirbnbClone() {
             className="absolute z-1"
             layout="fill"
             objectFit="cover"
-            src={AirBnbClone}
+            src={SimpleNotesAppImage}
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
             <h2 className="py-2">AirBnb Clone</h2>
-            <h3>React JS | TailwindCSS | MongoDB | Express</h3>
+            <h3>React JS | CSS</h3>
           </div>
         </div>
 
@@ -36,22 +36,22 @@ function AirbnbClone() {
           <div className="col-span-4">
             <h2 className="mb-2">Project Overview</h2>
             <p>
-              This app was built using React JS and TailwindCSS for UI building, NodeJS and Express for routing and MongoDB for database. This project is currently under development, but you can try some of the features on demo.
+              This simple note is building using ReactJS and native CSS, you can create, delete and search notes by title.
             </p>
             <a
-              href="https://github.com/usmanlubis/airbnb-clone/"
+              href="https://github.com/usmanlubis/notes-app-v1-reactjs"
               target="_blank"
               rel="noreferrer"
             >
               <button className="mr-4 px-8 py-2 mt-4 bg-[#39BCF9] hover:bg-[#39BCF9]/70 rounded-xl shadow-xl text-white/90 font-semibold">Code</button>
             </a>
-            <a
+            {/* <a
               href="https://usmanlubis.github.io/airbnb-clone/"
               target="_blank"
               rel="noreferrer"
             >
               <button className="px-8 py-2 mt-4 bg-[#39BCF9] hover:bg-[#39BCF9]/70 rounded-xl shadow-xl text-white/90 font-semibold">Demo</button>
-            </a>
+            </a> */}
           </div>
           <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
             <div className="p-2">
@@ -61,14 +61,9 @@ function AirbnbClone() {
                   <RiRadioButtonFill className="pr-1" /> React
                 </p>
                 <p className="text-gray-600 py-2 flex items-center">
-                  <RiRadioButtonFill className='pr-1' /> Tailwind
+                  <RiRadioButtonFill className='pr-1' /> CSS
                 </p>
-                <p className="text-gray-600 py-2 flex items-center">
-                  <RiRadioButtonFill className="pr-1" /> MongoDB
-                </p>
-                <p className="text-gray-600 py-2 flex items-center">
-                  <RiRadioButtonFill className="pr-1" /> Express
-                </p>
+
               </div>
             </div>
           </div>
@@ -84,4 +79,4 @@ function AirbnbClone() {
   );
 }
 
-export default AirbnbClone;
+export default SimpleNotesApp;

@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectsItem from './ProjectsItem';
 import AirBnbCloneThumbnail from '../public/assets/projects/airbnb-clone.png';
+import SimpleNotesAppThumbnail from '../public/assets/projects/simple-notes.png'
 
 
 function Projects() {
@@ -11,15 +12,15 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectsItem
             thumbnail={AirBnbCloneThumbnail}
-            title="Crypto"
-            tech="Reacts JS"
+            title="AirBnb Clone"
+            tech="Reacts JS | TailwindCSS | MongoDB | Express"
             link="/airbnb-clone-project"
           />
           <ProjectsItem
-            thumbnail={AirBnbCloneThumbnail}
-            title="Twitch"
-            tech="Reacts JS, Node JS"
-            link="/airbnb-clone"
+            thumbnail={SimpleNotesAppThumbnail}
+            title="Simple Notes App"
+            tech="Reacts JS | CSS"
+            link="/simple-app-project"
           />
           {/* <ProjectsItem
             thumbnail="/../public/assets/projects/property.jpg"

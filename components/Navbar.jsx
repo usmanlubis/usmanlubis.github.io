@@ -39,18 +39,18 @@ export default function Navbar() {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Home</li>
             </Link>
-            <Link href="#about">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:opacity-70">About</li>
             </Link>
-            <Link href="#skills">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Skills</li>
             </Link>
-            <Link href="#projects">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Projects</li>
             </Link>
-            <Link href="#contact">
+            {/* <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:opacity-70">Contact</li>
-            </Link>
+            </Link> */}
           </ul>
           <button type="button" className="md:hidden hover:opacity-70" onClick={navbarSideHandler}>
             <AiOutlineMenu size={30} />
@@ -81,18 +81,18 @@ export default function Navbar() {
               <Link href="/" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Home</li>
               </Link>
-              <Link href="#about" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
+              <Link href="/#about" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>About</li>
               </Link>
-              <Link href="#skills" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
+              <Link href="/#skills" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Skills</li>
               </Link>
-              <Link href="#projects" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
+              <Link href="/#projects" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Project</li>
               </Link>
-              <Link href="#contact" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
+              {/* <Link href="/#contact" className="hover:opacity-70" onClick={() => setNavbarSide(false)}>
                 <li>Contact</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
 
