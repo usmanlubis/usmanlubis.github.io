@@ -10,9 +10,9 @@ function About() {
         <div className="grid md:grid-cols-2 justify-center gap-4 items-center">
           <div className="md:w-[100] md:text-sm lg:text-base px-4">
             <p>
-              I am a Fullstack Web Developer. I am self-taught developer
+              I am self-taught fullstack web developer
               who learn through tutorials, reading documentation
-              and books. I am also an active administrator of community
+              and online course. I am also an active administrator of community
               of JCC (Jabar Coding
               Camp) alumni, a programmer scholarship from the provincial
               government.
