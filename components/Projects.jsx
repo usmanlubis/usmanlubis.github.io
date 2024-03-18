@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectsItem from './ProjectsItem';
 import RewriteBMKAThumbnail from '../public/assets/projects/rewritebmka.png';
+import PomodoroThumbnail from '../public/assets/projects/pomodoro.png';
 import AirBnbCloneThumbnail from '../public/assets/projects/airbnb-clone.png';
 import SimpleNotesAppThumbnail from '../public/assets/projects/simple-notes.png';
 
@@ -16,6 +17,12 @@ function Projects() {
             title="Rewrite BMKA Salman Website"
             tech="NextJS | TypeScript | TailwindCSS | RadixUI"
             link="/bmka-rewrite-project"
+          />
+          <ProjectsItem
+            thumbnail={PomodoroThumbnail}
+            title="Pomodoro App"
+            tech="NextJS | TypeScript | TailwindCSS"
+            link="/pomodoro-app"
           />
           <ProjectsItem
             thumbnail={AirBnbCloneThumbnail}
