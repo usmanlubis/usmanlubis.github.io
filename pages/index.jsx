@@ -21,7 +21,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <footer className="text-center pt-8 pb-4 bottom-0">
-        <p>&copy; Usman Lubis 2023</p>
+        <p>&copy; Usman Lubis {new Date().getFullYear()}</p>
       </footer>
     </>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import SimpleNotesAppImage from '../public/assets/projects/simple-notes.png'
+import SimpleNotesAppImage from '../public/assets/projects/simple-notes.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
@@ -73,7 +73,7 @@ function SimpleNotesApp() {
         </div>
       </div>
       <footer className="text-center pt-8 pb-4 bottom-0">
-        <p>&copy; Usman Lubis 2023</p>
+        <p>&copy; Usman Lubis {new Date().getFullYear()}</p>
       </footer>
     </>
   );
