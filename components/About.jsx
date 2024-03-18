@@ -10,7 +10,7 @@ function About() {
         <div className="grid md:grid-cols-2 justify-center gap-4 items-center">
           <div className="md:w-[100] md:text-sm lg:text-base px-4">
             <p>
-              I am a front end web developer. I am self-taught developer
+              I am a Fullstack Web Developer. I am self-taught developer
               who learn through tutorials, reading documentation
               and books. I am also an active administrator of community
               of JCC (Jabar Coding
@@ -26,10 +26,9 @@ function About() {
               styling, then I also learned JavaScript framework NextJS and still learning.
             </p>
             <p className="mb-4 md:mb-0">
-              I am now spending my time building more project with ReactJS and
+              I am now spending my time building more project with NextJS and
               Tailwind and learning database and back-end technologies focusing
-              on JavaScript like NodeJS and ExpressJS, also I am still improving
-              my front-end skills
+              on JavaScript like NodeJS and PHP - Laravel
             </p>
           </div>
           <Image

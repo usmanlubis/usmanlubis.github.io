@@ -13,11 +13,10 @@ function Main() {
             Hi, I am
             <span className="text-[#38BDF8]"> Usman</span>
           </h1>
-          <h1>A Front-End Web Developer</h1>
+          <h1>A Fullstack Web Developer</h1>
           <p className="max-w-xl m-auto my-4">
-            I&apos;m a front-end web developer specializing in building. Currently,
-            I&apos;m focused on building responsive front-end web application
-            while learning back-end technologies
+            I&apos;m a fullstack web developer specializing in building. Currently,
+            I&apos;m focused on building progressive web application using various technologies.
           </p>
           <div href="/" className="flex justify-between items-center w-[80%] mx-auto mt-8">
             <Link
